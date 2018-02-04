@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome  #{body.category[0].category_id}
+
+
+
+
+- books = ["A", "B", "C"]
+select
+  each book, i in books
+    option(value=i) Book #{book}
